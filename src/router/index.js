@@ -16,6 +16,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  {
+    path: "/data-rock",
+    name: "/data-rock",
+    component: () => import("@/views/DataRockView.vue"),
+  },
 ];
 
 const router = createRouter({
